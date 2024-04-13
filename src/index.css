@@ -1,13 +1,149 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import '~modern-normalize/modern-normalize.css';
+:root {
+  /* Font */
+  --primary-font: "Roboto",
+    sans-serif;
+  /* Сolors */
+  /* primary */
+  --background-dark: #282c34;
+  --hover: #ef5050;
+  --white: #fff;
+  --black: #2f2f2f;
+  --blue: #407bff;
+  /* secondary */
+  --light-blue: #61dafb;
+  --very-light-blue: #ecf2ff;
+  --air-force-blue: #d7e3ff;
+  --orange: #ff9d43;
+
+  --edit: #8baeff;
+}
+
+body {
+  margin: 0 auto;
+  background-color: var(--background-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto-Regular.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto-Medium.woff2) format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto-Bold.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  width: 100%;
+  min-width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 375px){
+  .container {
+      max-width: 428px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 20px;
+  }
+}
+
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  font-family: inherit;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+.list {
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

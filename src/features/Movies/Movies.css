@@ -1,0 +1,11 @@
+.Movies-title {
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.Movies-list{
+
+}
+.Movies-item:not(:last-child) {
+    padding-block-end: 12px;
+}

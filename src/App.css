@@ -2,7 +2,6 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color: #282c34;
 }
 
 .App-header {
@@ -15,8 +14,14 @@
   color: white;
 }
 
+
 .App-link {
-  color: #61dafb;
+  color: var(--light-blue);
+}
+
+.active {
+  transform: scale(1.1);
+  color: var(--orange);
 }
 
 .App-main {
