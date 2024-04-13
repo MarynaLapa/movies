@@ -9,15 +9,18 @@ function App() {
        <nav>
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" className='App-link'>Home</NavLink>
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/about" className='App-link'>About</NavLink>
           </li>
+          <li>
+            <NavLink to="/movies" className='App-link'>Movies</NavLink>
+          </li>  
         </ul>
        </nav>
       </header>
-      <main>
+      <main className='App-main'>
         <Outlet />
       </main>
     </div>
