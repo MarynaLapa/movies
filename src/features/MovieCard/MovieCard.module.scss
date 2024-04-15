@@ -1,0 +1,50 @@
+@use "../../style/shared";
+
+.card {
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 1px;
+    display: block;
+
+    h2 {
+        font-size: 24px;
+        color: shared.$primary-color;
+        margin-block-end: 8px;
+    }
+
+}
+
+.thumbnail {
+    display: block;
+    max-height: 200px;
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.content {
+    padding: 8px;
+
+    .overview {
+        color: shared.$dimmed-color;
+        font-size: small;
+        margin-bottom: 8px;
+    }
+
+    .popularity {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid shared.$primary-color;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+    
+}
+
+

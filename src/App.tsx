@@ -1,26 +1,13 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
-import './App.css';
+import style from './App.module.scss';
+import Header from './features/Header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <nav>
-          <ul>
-            <li>
-              <NavLink to="/" className='App-link'>Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" className='App-link'>About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/movies" className='App-link'>Movies</NavLink>
-            </li>  
-          </ul>
-        </nav>
-      </header>
-      <main className='App-main'>
+    <div className={style.App}>
+      <Header />
+      <main className={style.main}>
         <Outlet />
       </main>
     </div>

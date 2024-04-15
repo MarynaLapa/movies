@@ -55,6 +55,11 @@ body {
   font-display: swap;
 }
 
+.active {
+  color: var(--orange);
+  border-block-end: 2px solid var(--orange);
+} 
+
 .container {
   width: 100%;
   min-width: 280px;
